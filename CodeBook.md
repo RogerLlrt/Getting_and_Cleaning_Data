@@ -1,6 +1,6 @@
 # CodeBook
 
-This is a code book that describes the variables resulting from the `run_analysis.R` script.
+This is a code book that describes the dataset `aver_data` resulting from the `run_analysis.R` script.
 
 ## The data source
 
