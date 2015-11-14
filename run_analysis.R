@@ -3,7 +3,7 @@
 #==============================================================================#
 require(data.table)
 
-## 1. Set up the fixed path and the dynamic paths.
+## 1. Set up the fixed path and the dynamic paths
 
 fixed_path <- paste(getwd(), '/UCI HAR Dataset', sep = '')
 
