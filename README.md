@@ -10,7 +10,8 @@ This is because data are not stored in the same directories. The point here is t
 2.3. Store the names of the labels of the variable activity `activity_names`.<br />
 
 ### 3. Clean the data obtained
-3.1. Get the indexes of the features of interest (the mean and the std of the measurements. It can be done by using `grep()` function over `features`. <br />
+Here is where the majority of the work will be done. In particular points 2, 3 and 4 from the Course Project instructions.<br />
+3.1. Get the indexes of the features of interest (the mean and the std of the measurements. It can be done by using `grep()` function over `features`.<br />
 3.2. Store all data of interest in a data.table `data`. Note that the structure of `merged_data` allows us to conduct this operation in a very compacted way.<br />
 3.3. Rename the corresponding variables in a proper manner (e.g. without lowercase, hyphens...).<br />
 3.4. Set the labels of the activity variable and return the data set. Assign it to `all_data`. <br />

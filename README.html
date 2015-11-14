@@ -68,13 +68,13 @@ img {
 <h3>1. Set up the fixed path and the dynamic paths.</h3>
 <p>This is because data are not stored in the same directories. The point here is to set a kind of reference location from which acces all the data. It could be done easily with <code>setwd()</code> but from my point of view it is worth avoid any change outside the R script.</p>
 </div>
-<div id="load-all-data-nedded-for-the-project" class="section level3">
-<h3>2. Load all data nedded for the project</h3>
-<p>2.1. Store the variables values in a list <code>merged_data</code>. It is important preserve the original structure of the data. Namely, the magnitudes, the subjects and the activities separately. Here is where we can take advantage of the objects <code>fixed_path</code> and <code>dyn_paths</code> by using <code>lapply()</code>.<br /> 2.2. Store the variable names <code>features</code>.<br /> 2.3. Store the names of the labels of the activity variable <code>activity_names</code>.<br /></p>
+<div id="load-all-data-needed-for-the-project" class="section level3">
+<h3>2. Load all data needed for the project</h3>
+<p>2.1. Store the variables values in a list <code>merged_data</code>. It is important preserve the original structure of the data. Namely, the magnitudes, the subjects and the activities separately. Here is where we can take advantage of the objects <code>fixed_path</code> and <code>dyn_paths</code> by using <code>lapply()</code>.<br /> 2.2. Store the variable names <code>features</code>.<br /> 2.3. Store the names of the labels of the variable activity <code>activity_names</code>.<br /></p>
 </div>
 <div id="clean-the-data-obtained" class="section level3">
 <h3>3. Clean the data obtained</h3>
-<p>3.1. Get the indexes of the features of interest (the mean and the std of the measurements. It can be do it using <code>grep()</code> function over <code>features</code>. <br /> 3.2. Store all data of interest in a data.table <code>data</code>. Note that the structure of <code>merged_data</code> allows us to conduct this operation in a very compacted way.<br /> 3.3. Rename the corresponding variables in a proper manner (e.g. without lowercase, hyphens…).<br /> 3.4. Set the labels of the activity variable and return the data set. Assing it to <code>all_data</code>. <br /></p>
+<p>Here is where the majority of the work will be done. In particular points 2, 3 and 4 from the Course Project instructions.<br /> 3.1. Get the indexes of the features of interest (the mean and the std of the measurements. It can be done by using <code>grep()</code> function over <code>features</code>.<br /> 3.2. Store all data of interest in a data.table <code>data</code>. Note that the structure of <code>merged_data</code> allows us to conduct this operation in a very compacted way.<br /> 3.3. Rename the corresponding variables in a proper manner (e.g. without lowercase, hyphens…).<br /> 3.4. Set the labels of the activity variable and return the data set. Assign it to <code>all_data</code>. <br /></p>
 </div>
 <div id="compute-the-average-of-each-variable-for-each-activity-and-each-subject" class="section level3">
 <h3>4. Compute the average of each variable for each activity and each subject</h3>
